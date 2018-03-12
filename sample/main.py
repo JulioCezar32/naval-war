@@ -8,8 +8,7 @@ player_one = Player('Joao')
 player_two = Player('Maria')
 
 board = SetUpBoard(4).get_board()
-pprint(board)
-player_one.create_ship(Encouracado('2B'))
+player_one.create_ship(Encouracado('1A'))
 player_two.launch_bomb('2A')
 
 match = Match(player_one, player_two, board)

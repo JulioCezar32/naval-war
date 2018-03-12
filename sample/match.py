@@ -21,7 +21,7 @@ class Match():
     def get_result(self):
         bomb_column = self.bomb_position[-1]
         bomb_row = int(self.bomb_position[:-1])
-        if(self.board[bomb_row][bomb_column] == 1):
+        if(self.board[bomb_row ][bomb_column] == 1):
             return 'The ship was hitted'
         else:
             return 'The ship was not hitted'
