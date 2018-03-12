@@ -1,13 +1,13 @@
 from player import Player
 from match import Match
-
+from ships_models import *
 
 
 player_one = Player('Joao')
 player_two = Player('Maria')
 
-player_one.create_ship(Encouracado(),'A2')
-player_two.create_ship(Encouracado(),'A2')
+player_one.create_ship(Encouracado('A2'))
+player_two.create_ship(Encouracado('A2'))
 
 player_one.launch_bomb('A2')
 player_two.launch_bomb('A2')
