@@ -7,18 +7,16 @@ class Match():
 
         self.ship_owner = ship_owner
         self.bomb_owner = bomb_owner
-        self.ship_position = ship_owner.ship.get_position()
+        self.ship_positions = ship_owner.ship.get_position()
         self.bomb_position = bomb_owner.bomb_position
         self.board = board
 
         #plot ship into the board
-        ship_column = self.ship_position[-1]
-        ship_row = self.ship_position[:-1]
-        try:
+        for ship_position in self.ship_positions:
+            ship_column = ship_position[-1]
+            ship_row = ship_position[:-1]
             row = int(ship_row)
-        except ValueError:
-            raise ValueError ("Invalid seat letter {}".format(ship_row))
-        self.board[row][ship_column] = 1
+            self.board[row][ship_column] = 1
 
     def get_result(self):
         bomb_column = self.bomb_position[-1]

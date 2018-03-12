@@ -2,15 +2,17 @@ from ship import Ship
 
 class Encouracado(Ship):
 
-    ship_size = 3
 
     def __init__(self, position):
-        Ship.__init__(self,'Encouracado', position)
+
+        ship_size = 3
+        Ship.__init__(self,'Encouracado', position, ship_size)
 
 
 class PortaAvioes(Ship):
 
-    ship_size = 3
 
     def __init__(self, position):
-        Ship.__init__(self,'PortaAvioes', position)
+
+        ship_size = 3
+        Ship.__init__(self,'PortaAvioes', position, ship_size)

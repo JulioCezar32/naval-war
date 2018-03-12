@@ -5,4 +5,4 @@ class GameBoard():
         self.board_size = board_size
 
     def create_board(self):
-        return (range(1, self.board_size ),"ABCDEFGHIJKLMNOPQRSTUVXZ"[:self.board_size + 1])
+        return (range(1, self.board_size + 1),"ABCDEFGHIJKLMNOPQRSTUVXZ"[:self.board_size + 1])
