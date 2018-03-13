@@ -8,6 +8,6 @@ class Ship():
     def get_position(self):
         self.position = []
         for piece in range(self.size):
-            next_space = str(int(self.ship_head[:-1]) + piece) + self.ship_head[-1]
+            next_space = str(int(self.ship_head[0]) + piece) + self.ship_head[1]
             self.position.append(next_space)
         return self.position
