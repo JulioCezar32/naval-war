@@ -5,6 +5,7 @@ class Ship():
         self.name = name
         self.size = ship_size
 
+        #pensar numa nova nomenclatura
     def get_position(self):
         self.position = []
         for piece in range(self.size):

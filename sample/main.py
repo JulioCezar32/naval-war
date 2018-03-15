@@ -10,10 +10,10 @@ player_two = Player('Maria')
 #board = SetUpBoard(8).get_board()
 
     #ships names Encouracado, PortaAvioes, Destroyer, Submarino, BarcoDePatrulha
-player_one.create_ship(Encouracado('2A'))
-player_two.launch_bomb('2A')
-
-match = Match(player_one, player_two, 5)
+player_one.create_ship(Destroyer('1C'))
+player_two.launch_bomb('4A')
+print(player_one.ship.name)
+match = Match(player_one, player_two, 4)
 ships = match.plot_ship()
 
 pprint(match.get_board())

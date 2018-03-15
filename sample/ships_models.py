@@ -5,8 +5,9 @@ class Encouracado(Ship):
 
     def __init__(self, position):
 
-        ship_size = 4
-        Ship.__init__(self,'Encouracado', position, ship_size)
+        SIZE = 4
+        NAME = 'Encouracado'
+        Ship.__init__(self, NAME, position, SIZE)
 
 
 class PortaAvioes(Ship):
@@ -14,8 +15,9 @@ class PortaAvioes(Ship):
 
     def __init__(self, position):
 
-        ship_size = 5
-        Ship.__init__(self,'PortaAvioes', position, ship_size)
+        SIZE = 5
+        NAME = 'PortaAvioes'
+        Ship.__init__(self, NAME, position, SIZE)
 
 class Submarino(Ship):
 

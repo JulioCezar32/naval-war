@@ -1,12 +1,10 @@
 from ship import Ship
-from setupboard import SetUpBoard
-
-class Match(SetUpBoard):
+from gameboard import GameBoard
+class Match(GameBoard):
 
     def __init__(self, ship_owner, bomb_owner, board_size):
         #receive all data from the match
-        SetUpBoard.__init__(self, board_size)
-        self.board = SetUpBoard(board_size).get_board()
+        self.board = GameBoard(board_size).set_up_board()
         self.ship_owner = ship_owner
         self.bomb_owner = bomb_owner
 
