@@ -2,7 +2,6 @@ class GameBoard():
 
     def __init__(self, size):
         self.size = size
-        self.range = self.create_range()
         self.bord = self.set_up_board()
 
         # Is necessary put the name of bord inside the method name? like create_board_range
@@ -12,6 +11,6 @@ class GameBoard():
         return (rows_numbers, columns_letters)
 
     def set_up_board(self):
-        rows, columns = self.range
+        rows, columns = self.create_range()
         board = [{column:0 for column in columns} for row in rows]
         return board

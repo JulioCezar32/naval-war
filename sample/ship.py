@@ -4,11 +4,13 @@ class Ship():
         self.ship_head = ship_head
         self.name = name
         self.size = ship_size
-
+        self.generate_position()
         #pensar numa nova nomenclatura
-    def get_position(self):
+    def generate_position(self):
         self.position = []
-        for piece in range(self.size):
-            next_space = str(int(self.ship_head[0]) + piece) + self.ship_head[1]
-            self.position.append(next_space)
-        return self.position
+        ship_column = self.ship_head[1]
+        ship_row = self.ship_head[0]
+        for pera in range(self.size):
+            ship_next_row = int(self.ship_head[0]) + pera
+            ship_body = str(ship_next_row) + ship_column
+            self.position.append(ship_body)

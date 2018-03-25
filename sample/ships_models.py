@@ -24,21 +24,24 @@ class Submarino(Ship):
 
     def __init__(self, position):
 
-        ship_size = 3
-        Ship.__init__(self,'PortaAvioes', position, ship_size)
+        SIZE = 3
+        NAME = 'Submarino'
+        Ship.__init__(self, NAME, position, SIZE)
 
 class Destroyer(Ship):
 
 
     def __init__(self, position):
 
-        ship_size = 3
-        Ship.__init__(self,'PortaAvioes', position, ship_size)
+        SIZE = 3
+        NAME = 'Destroyer'
+        Ship.__init__(self, NAME,  position, SIZE)
 
 class BarcoDePatrulha(Ship):
 
 
     def __init__(self, position):
 
-        ship_size = 2
-        Ship.__init__(self,'PortaAvioes', position, ship_size)
+        SIZE = 2
+        NAME = 'BarcoDePatrulha'
+        Ship.__init__(self, NAME, position, SIZE)
